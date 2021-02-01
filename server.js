@@ -23,6 +23,6 @@ app.get('/about', (req, res) => {
     res.render('about.hbs');
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log(`escuchando peticiones en el puerto ${port}`)
 });
